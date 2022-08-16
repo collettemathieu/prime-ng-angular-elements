@@ -1,5 +1,11 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
-  "projects": {}
+  "projects": {
+    "elements": "apps/elements",
+    "elements-e2e": "apps/elements-e2e",
+    "prime-ng-button-element": "libs/prime-ng-button-element",
+    "using-elements": "apps/using-elements",
+    "using-elements-e2e": "apps/using-elements-e2e"
+  }
 }

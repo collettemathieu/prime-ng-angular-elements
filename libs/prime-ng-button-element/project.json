@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/prime-ng-button-element/src",
+  "prefix": "angular-elements-prime-ng",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/prime-ng-button-element"],
+      "options": {
+        "project": "libs/prime-ng-button-element/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/prime-ng-button-element/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/prime-ng-button-element/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/prime-ng-button-element"],
+      "options": {
+        "jestConfig": "libs/prime-ng-button-element/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/prime-ng-button-element/**/*.ts",
+          "libs/prime-ng-button-element/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
